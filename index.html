@@ -1046,10 +1046,9 @@
 	document.querySelector('#header > div.header-bottom > div > div > div.col-sm-3 > div > input[type=text]').on('keypress',function(e) {
    		 if(e.which == 13) {
 	 		   var searchtext = $(this).val();
+			 window.location = "search.html?q=" + searchtext;
 		 }
 	})
-		var queryString = "?q=" + searchtext; 
-		window.location.href = "search.html" + queryString;
 	</script>
 </body>
 </html>
