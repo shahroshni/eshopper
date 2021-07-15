@@ -1042,5 +1042,14 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+	<script>
+	document.querySelector('#header > div.header-bottom > div > div > div.col-sm-3 > div > input[type=text]').on('keypress',function(e) {
+   		 if(e.which == 13) {
+	 		   var searchtext = $(this).val();
+		 }
+	})
+		var queryString = "?q=" + searchtext; 
+		window.location.href = "search.html" + queryString;
+	</script>
 </body>
 </html>
